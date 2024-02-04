@@ -1,32 +1,9 @@
-#topbar {
-    background-color: #041E42; 
-}
-
-#logo {
-    float: left;
-}
-
-#menu {
-    display: flex;
-    justify-content: space-between;
-}
-
 div {
     outline: 1px solid red;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
-
-#link-div {
-    text-align: center;
-    margin: 40px;
-    padding: auto;
-}
-
-#header {
-    display: flex;
-    justify-content: space-between;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
