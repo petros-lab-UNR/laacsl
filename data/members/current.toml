@@ -1,0 +1,14 @@
+[calebpatton]
+    name = "Caleb Patton"
+    mugshot = "mugshots/caleb-patton.png"
+    text = ["Caleb is a phd student interested in AI, Autonomy and Aerospace"]
+
+[antoniofernandezcastano]
+    name = "Antonio Fernandez Castano"
+    mugshot = "mugshots/antonio.png"
+    text = ["antonio is a master's student asdfasdfasdfasdsdfgsdfgsdfgsdfgsdfgsdfgsdfgdsfgfasdf"]
+
+[jessicapeterson]
+    name = "Jessica Peterson"
+    mugshot = "mugshots/jessica-peterson.png"
+    text = ["jessica is a phd student"]
