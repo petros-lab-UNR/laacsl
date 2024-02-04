@@ -1,0 +1,17 @@
+<nav id="topbar">
+    <div id="header" class="container">
+        <div id="logo">
+            <a href=""><img class="logo" id="logo-navbar" src="logo/group_logo.png" height ="100"/></a>
+        </div>
+        <div id="menu">
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+            <div id="link-div">
+            <a class="menu {{if or ($currentPage.IsMenuCurrent "main" .) (eq $currentPage.Section (lower .Name) ) }} active{{end}}"
+                href="{{ .URL }}" {{ if (eq .Name "Software") }}target="_blank" {{ end }}
+                title="{{ .Title }}">{{ .Name }}</a></div>
+            {{ end }}
+        </div>
+    </div>
+</nav>
+
