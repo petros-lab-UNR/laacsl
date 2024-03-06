@@ -1,30 +1,36 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+BaseURL = "https://www.mywebsite.com/"
+languageCode = "en-us"
+title = "My Hugo Site"
+theme = "mytheme"
+relativeURLS = true
+sectionPagesMenu = "main"
+
+
+
+[module]
+[[module.mounts]]
+    source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    target = "assets/js/bootstrap.bundle.min.js"
 
 
 [menu]
     [[menu.main]]
-        name = "Home"
-        url = "/"
-        weight = 1
-    [[menu.main]]
         name = "Research"
         url = "/research/"
-        weight = 2
+        weight = 10
     [[menu.main]]
         name = "Publications"
         url = "/publications/"
-        weight = 3
+        weight = 20
     [[menu.main]]
         name = "Members"
         url = "/members/"
-        weight = 4
+        weight = 30
     [[menu.main]]
         name = "Education"
         url = "/education/"
-        weight = 5
+        weight = 40
     [[menu.main]]
         name = "News"
         url = "/news/"
-        weight = 6
+        weight = 50
