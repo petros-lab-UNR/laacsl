@@ -1,6 +1,6 @@
-BaseURL = "https://www.mywebsite.com/"
+BaseURL = "https://petros-lab-unr.github.io/"
 languageCode = "en-us"
-title = "My Hugo Site"
+title = "LAACSL Website"
 theme = "mytheme"
 relativeURLS = true
 sectionPagesMenu = "main"

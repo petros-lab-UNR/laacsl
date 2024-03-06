@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on My Hugo Site</title>
-    <link>https://www.mywebsite.com/</link>
-    <description>Recent content in Home on My Hugo Site</description>
+    <title>Home on LAACSL Website</title>
+    <link>https://petros-lab-unr.github.io/</link>
+    <description>Recent content in Home on LAACSL Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.mywebsite.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://petros-lab-unr.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Education</title>
-      <link>https://www.mywebsite.com/education/</link>
+      <link>https://petros-lab-unr.github.io/education/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.mywebsite.com/education/</guid>
+      <guid>https://petros-lab-unr.github.io/education/</guid>
       <description></description>
     </item>
     <item>
       <title>Members</title>
-      <link>https://www.mywebsite.com/members/</link>
+      <link>https://petros-lab-unr.github.io/members/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.mywebsite.com/members/</guid>
+      <guid>https://petros-lab-unr.github.io/members/</guid>
       <description></description>
     </item>
     <item>
       <title>News</title>
-      <link>https://www.mywebsite.com/news/</link>
+      <link>https://petros-lab-unr.github.io/news/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.mywebsite.com/news/</guid>
+      <guid>https://petros-lab-unr.github.io/news/</guid>
       <description></description>
     </item>
     <item>
       <title>Publications</title>
-      <link>https://www.mywebsite.com/publications/</link>
+      <link>https://petros-lab-unr.github.io/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.mywebsite.com/publications/</guid>
+      <guid>https://petros-lab-unr.github.io/publications/</guid>
       <description></description>
     </item>
     <item>
       <title>Research</title>
-      <link>https://www.mywebsite.com/research/</link>
+      <link>https://petros-lab-unr.github.io/research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.mywebsite.com/research/</guid>
+      <guid>https://petros-lab-unr.github.io/research/</guid>
       <description></description>
     </item>
   </channel>

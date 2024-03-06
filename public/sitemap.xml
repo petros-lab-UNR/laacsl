@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.mywebsite.com/</loc>
+    <loc>https://petros-lab-unr.github.io/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>https://www.mywebsite.com/categories/</loc>
+    <loc>https://petros-lab-unr.github.io/categories/</loc>
   </url><url>
-    <loc>https://www.mywebsite.com/education/</loc>
+    <loc>https://petros-lab-unr.github.io/education/</loc>
   </url><url>
-    <loc>https://www.mywebsite.com/members/</loc>
+    <loc>https://petros-lab-unr.github.io/members/</loc>
   </url><url>
-    <loc>https://www.mywebsite.com/news/</loc>
+    <loc>https://petros-lab-unr.github.io/news/</loc>
   </url><url>
-    <loc>https://www.mywebsite.com/publications/</loc>
+    <loc>https://petros-lab-unr.github.io/publications/</loc>
   </url><url>
-    <loc>https://www.mywebsite.com/research/</loc>
+    <loc>https://petros-lab-unr.github.io/research/</loc>
   </url><url>
-    <loc>https://www.mywebsite.com/tags/</loc>
+    <loc>https://petros-lab-unr.github.io/tags/</loc>
   </url>
 </urlset>

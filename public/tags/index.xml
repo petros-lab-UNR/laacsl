@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on My Hugo Site</title>
-    <link>https://www.mywebsite.com/tags/</link>
-    <description>Recent content in Tags on My Hugo Site</description>
+    <title>Tags on LAACSL Website</title>
+    <link>https://petros-lab-unr.github.io/tags/</link>
+    <description>Recent content in Tags on LAACSL Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://www.mywebsite.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://petros-lab-unr.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
