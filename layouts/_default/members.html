@@ -1,12 +1,12 @@
 {{ define "main" }}
-<link rel="stylesheet" type="text/css" href="css/members_styles.css" />
+<link rel="stylesheet" type="text/css" href="../css/members_styles.css" />
 <h2>Current members</h2>
 <main id="content">
     <div id="students">
         <div id="student-cards">
             {{ .Content }}
             {{$current := .Site.Data.members.current }}
-            {{$past := .Site.Data.members.past }}
+            {{/*  {{$past := .Site.Data.members.past }}  */}}
                 {{ range $current }}
                         {{ partial "person.html" . }}
                 {{ end }}
