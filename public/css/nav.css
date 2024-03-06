@@ -1,0 +1,36 @@
+#navbar {
+    background-color: #1a6cdf; 
+    width: 100vw;
+}
+
+#logo {
+    float: left;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#link-div {
+    text-align: center;
+    margin: 40px;
+    padding: auto;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
