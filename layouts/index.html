@@ -1,12 +1,33 @@
 
 {{ define "main" }}
 
+<style>
+    .container img {
+        width: 15%;
+        height: auto;
+        display: block;    
+    }
+
+    .display-4 {
+        color: black;
+        font-weight: bold;
+        -webkit-text-stroke: 2px white;
+    }
+
+    .lead { 
+        color: black;
+        font-weight: bold;
+        -webkit-text-stroke: 1px white;
+    }
+
+</style>
+
 <div class="jumbotron text-center">
     <h1 class="display-4">Learning Autonomy and Control Systems Laboratory</h1>
     <p class="lead">University of Nevada, Reno </p>
   
-    <div class="d-flex justify-content-center">
-     
+    <div class="d-flex justify-content-center container">
+        <img src="images/unr_logo.png">
     </div>
   </div>
 
@@ -14,6 +35,8 @@
     <h5 class="text-center">Dr. Petros Voulgaris, Chair of the Mechanical Engineering Department at UNR, leads the LAACSL. This laboratory specializes in integrating modern computational techniques with traditional control methods to advance research in autonomous cyberphysical systems, spanning aerial and terrestrial domains.
     </h5>
 </div>
+
+
 
 {{ end }}
 

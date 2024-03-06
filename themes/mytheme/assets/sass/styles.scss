@@ -3,6 +3,10 @@
     margin-bottom: 2rem;
     background-color: var(--bs-light);
     border-radius: .3rem;  
+    background-image: url('/images/takeoff.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .navbar-nav {

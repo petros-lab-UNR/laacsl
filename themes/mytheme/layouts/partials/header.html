@@ -1,7 +1,23 @@
+<style>
+    .custom-navbar {
+     background-color: rgb(4,30,66);   
+    }
+
+    .nav-link {
+    color: white;
+    }
+    .navbar-brand {
+        margin-left: 20px;
+}
+
+
+</style>
 <div class="alert alert-danger" role="alert">
     Pardon our dust! This website is still under construction.
   </div>
-<nav class="navbar navbar-expand-sm bg-light">
+
+  
+<nav class="navbar navbar-expand-sm navbar-dark custom-navbar">
     <a class="navbar-brand {{ if .IsHome }} active {{ end }} " href="{{ .Site.Home.Permalink }}">Home</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
