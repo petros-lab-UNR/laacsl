@@ -1,0 +1,25 @@
+Ms. Jessica Peterson is a part-time Instructor Flight Test Engineer for the
+        USAF Test Pilot School (USAF TPS) and a current PhD student and
+        Research Assistant for the Mechanical Engineering Department at the
+        University Nevada Reno. She has over 18 years of flight test experience on
+        fighter, bomber, and autonomous vehicles. As a graduate and instructor of
+        USAF TPS, she has directed hundreds of control room missions, instructed
+        150+ flight test and space test professionals at USAF TPS, and flown in over
+        40 different aircraft types with over 500 military flight hours in primarily the
+        T-38, F-16, and C-12 aircraft.</p>
+        <p>Ms. Peterson began her career as a DoD Civil Service employee in 2005 and
+            attended US Air Force Test Pilot School (USAF TPS) as a civilian Flight Test
+            Engineer in 2017. She has served in various engineering capacities including
+            RQ-4 Guidance and Control Test Engineer, F-16 Flight Sciences Lead,
+            Special Projects Flight Technology Lead, B-2 Flight Test Engineer, and
+            USAF TPS Test Foundations Technical Expert. The highlight of her career
+            was when she got to shake the hand of a pilot whose life was saved by a system she helped develop and test, the F-16
+            Automatic Ground Collision Avoidance System.</p>
+        <p>Prior to returning to graduate school, Ms. Peterson was the Technical Director for the 412th Operations Group at
+            Edwards Air Force Base, California. She provided technical oversight for the Air Force's largest Flight Test Operations
+            Group, responsible for a $40M flight hour budget and developmental test and evaluation of over 300 test programs on
+            76 aircraft of 12 different types. Additionally, she was an Assistant Professor and Instructor Flight Test Engineer at
+            USAF TPS, instructing the foundational elements to plan, conduct, and report on developmental test programs. She
+            instructed a diverse range of topics in the classroom, laboratory, control room and in the airborne environment. In this
+            position she was responsible for course development and instruction of 15 advanced engineering courses to 75+ test
+            professional students annually.

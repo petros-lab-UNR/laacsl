@@ -46,12 +46,23 @@
 <body>
 
 <div class="container">
-  <h1>News</h1>
-  <h2>2023</h2>
-  <ul class="links">
-    <li><a href="https://www.unr.edu/nevada-today/news/2023/aerospace-engineering-program">University receives largest individual gift in its history to create the George W. GIllemot Aerospace Engineering Department</a></li>
-    <li><a href="https://www.unr.edu/nevada-today/news/2022/nasa-uli-research-">NASA ULI Project Grant Awarded</a></li>
-  </ul>
+  {{ $news := .Site.Data.news.news }}
+  {{ $sortedNews := sort $news "year" "desc" }}
+  
+  {{ $currentYear := 0 }}
+  {{ range $sortedNews }}
+    {{ if ne .year $currentYear }}
+      {{ if ne $currentYear 0 }}</ul>{{ end }}
+      <h2>{{ .year }}</h2>
+      <ul class="links">
+      {{ $currentYear = .year }}
+    {{ end }}
+    <li>
+      <a href="{{ .link }}">{{ .title }}</a>
+    </li>
+  {{ end }}
+  {{ if ne $currentYear 0 }}</ul>{{ end }}
+  
 </div>
 
 </body>

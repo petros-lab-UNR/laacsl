@@ -1,49 +1,56 @@
-#member {
-    display: grid;
-    grid-template-columns: auto auto;
-    margin: 75px;
-}
 
-#bio-box {
-    float: right;
-    width: 300px;
-    margin-left: 75px;
-    margin-right: 75px;
-}
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
 
-#headshot-box {
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  .member {
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 10px;
     overflow: hidden;
-}
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
 
+  .member img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #333;
+  }
 
-div {
-    outline: 1px solid red;
-}
+  .member-info {
+    padding: 20px;
+  }
 
+  .member-info h2 {
+    margin-top: 0;
+    color: #333;
+  }
 
-#name-box {
-}
+  .member-info p {
+    color: #666;
+  }
 
-#listing {
-}
+  .social-links {
+    margin-top: 10px;
+  }
 
-
-#students-cards{
-    display: grid;
-    grid-template-columns: auto auto;
-}
-
-#students {
-    width: 75%;
-}
-
-#content {
-    justify-content: center;
-    display: flex;
-    justify-content: center;
-}
-
+  .social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+  }

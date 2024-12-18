@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on LAACSL Website</title>
-    <link>https://petros-lab-unr.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Home on LAACSL Website</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://petros-lab-unr.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Education</title>
-      <link>https://petros-lab-unr.github.io/education/</link>
+      <link>http://localhost:1313/education/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://petros-lab-unr.github.io/education/</guid>
+      <guid>http://localhost:1313/education/</guid>
       <description></description>
     </item>
     <item>
       <title>Members</title>
-      <link>https://petros-lab-unr.github.io/members/</link>
+      <link>http://localhost:1313/members/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://petros-lab-unr.github.io/members/</guid>
-      <description></description>
+      <guid>http://localhost:1313/members/</guid>
+      <description>&lt;p&gt;this is from members/index.md&lt;/p&gt;</description>
     </item>
     <item>
       <title>News</title>
-      <link>https://petros-lab-unr.github.io/news/</link>
+      <link>http://localhost:1313/news/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://petros-lab-unr.github.io/news/</guid>
+      <guid>http://localhost:1313/news/</guid>
       <description></description>
     </item>
     <item>
       <title>Publications</title>
-      <link>https://petros-lab-unr.github.io/publications/</link>
+      <link>http://localhost:1313/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://petros-lab-unr.github.io/publications/</guid>
+      <guid>http://localhost:1313/publications/</guid>
       <description></description>
     </item>
     <item>
       <title>Research</title>
-      <link>https://petros-lab-unr.github.io/research/</link>
+      <link>http://localhost:1313/research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://petros-lab-unr.github.io/research/</guid>
+      <guid>http://localhost:1313/research/</guid>
       <description></description>
     </item>
   </channel>

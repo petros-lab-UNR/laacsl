@@ -1,7 +1,6 @@
 {
   "name": "hugo-bootstrap",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +8,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.3"
-  }
+    "bootstrap": "^3.4.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petros-lab-UNR/petros-lab-UNR.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/petros-lab-UNR/petros-lab-UNR.github.io/issues"
+  },
+  "homepage": "https://github.com/petros-lab-UNR/petros-lab-UNR.github.io#readme",
+  "description": ""
 }
