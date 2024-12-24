@@ -86,75 +86,6 @@
   </header>
   <main>
     
-
-<h1>Our Members</h1>
-<main id="content">
-    <div id="students">
-        <div id="student-cards">
-          
-            <div class="container">
-            <div class="member">
-              
-              <img src="../headshots/petros-voulgaris.png" alt="Photo of Dr. Voulgaris" />
-              <div class="member-info">
-                <h2>Dr. Voulgaris</h2>
-                <p>Before joining UNR in 2020 and since 1991, Professor Petros G. Voulgaris has been a faculty with the Department of Aerospace Engineering, University of Illinois at Urbana-Champaign holding also appointments with the Coordinated Science Laboratory, and the department of Electrical and Computer Engineering. His research interests are in the general area of robust and optimal control and coordination of autonomous systems. Dr. Voulgaris is a recipient of several awards including the NSF Research Initiation Award, the ONR Young Investigator Award and the UIUC Xerox Award for research. He has also been a Visiting ADGAS Chair Professor, Mechanical Engineering, Petroleum Institute, Abu Dhabi, UAE and a Visiting Gaungbiao Chair at Zhejiang University, China. His research has been supported by several agencies including NSF, ONR, AFOSR, NASA. He is also a Fellow of IEEE.</p>
-                <div class="social-links">
-                  
-                  <a href="mailto:pvoulgaris@unr.edu">pvoulgaris@unr.edu</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-            <div class="container">
-            <div class="member">
-              
-              <img src="../headshots/caleb-patton.png" alt="Photo of Caleb Patton" />
-              <div class="member-info">
-                <h2>Caleb Patton</h2>
-                <p>Caleb is a phd student interested in AI, Autonomy and Aerospace</p>
-                <div class="social-links">
-                  
-                  <a href="mailto:calebpatton@unr.edu">calebpatton@unr.edu</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-            <div class="container">
-            <div class="member">
-              
-              <img src="../headshots/antonio.png" alt="Photo of Antonio Fernandez Castano" />
-              <div class="member-info">
-                <h2>Antonio Fernandez Castano</h2>
-                <p>Antonio currently works as a Graduate Research Assistant in the Learning Autonomy and Control Systems Lab at the University of Nevada, Reno. He received his B.S. in Mechanical Engineering with a minor in Mathematics in 2022 from West Virginia University Institute of Technology. He was awarded the Presidential Leadership Award, Pi Tau Sigma Chapter Contribution, and National Fluid Power Association awards during his time there. During his pursuit of an MS at UNR, he actively contributed to two research papers: &#34;Adaptive Control to Suppress Torque Ripple in Electric Vehicles&#34; and &#34;Uncertainty Quantification-Based Switching Control Method for Vision-Based Object Tracking in Unmanned Aerial Vehicles.&#34; Both papers were presented at MECC 2023 and AIAA SciTech 2024 respectively. His research interests include uncertainty mitigation in autonomous vehicles, manufacturing control and robotics, and machine learning. After the completion of his MS, he will be joining Tesla, Inc.</p>
-                <div class="social-links">
-                  
-                  <a href="mailto:afernandez@unr.edu">afernandez@unr.edu</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-            <div class="container">
-            <div class="member">
-              
-              <img src="../headshots/jessica-peterson.jpg" alt="Photo of Jessica Peterson" />
-              <div class="member-info">
-                <h2>Jessica Peterson</h2>
-                <p>Ms. Jessica Peterson is a part-time Instructor Flight Test Engineer for the USAF Test Pilot School (USAF TPS) and a current PhD student and Research Assistant for the Mechanical Engineering Department at the University Nevada Reno. She has over 18 years of flight test experience on fighter, bomber, and autonomous vehicles. As a graduate and instructor of USAF TPS, she has directed hundreds of control room missions, instructed 150&#43; flight test and space test professionals at USAF TPS, and flown in over 40 different aircraft types with over 500 military flight hours in primarily the T-38, F-16, and C-12 aircraft.</p>
-                <div class="social-links">
-                  
-                  <a href="mailto:jessicapeterson@unr.edu">jessicapeterson@unr.edu</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-    </div>
-</main>
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -174,7 +105,13 @@
     color: #333;
   }
 
+  .section-heading {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
   .member {
+    display: flex;
     margin-bottom: 30px;
     background-color: #fff;
     border-radius: 10px;
@@ -182,36 +119,337 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
-  .member img {
+  .member-left {
+    width: 200px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .member-image {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .member-image img {
     width: 100%;
-    height: auto;
-    border-bottom: 2px solid #333;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
   }
 
-  .member-info {
-    padding: 20px;
+  .member-contact {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #fff;
   }
 
-  .member-info h2 {
-    margin-top: 0;
+  .member-contact p {
+    margin: 5px 0;
+    color: #666;
+    display: flex;
+    align-items: center;
+  }
+
+  .member-contact a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+
+  .member-contact a:hover {
     color: #333;
   }
 
-  .member-info p {
-    color: #666;
+  .email-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    fill: currentColor;
   }
 
   .social-links {
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
   }
 
   .social-links a {
     display: inline-block;
-    margin-right: 10px;
-    color: #333;
-    text-decoration: none;
+    width: 24px;
+    height: 24px;
   }
+
+  .social-links img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .member-info {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .member-info h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  .member-info .title {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+
+  .member-info p {
+    color: #666;
+    flex-grow: 1;
+  }
+
+  .year-range {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+
+  .email-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  .email-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    fill: currentColor;
+  }
+  
 </style>
+
+<h1 class="section-heading">Current Members</h1>
+<main id="content">
+    <div id="students">
+        <div id="student-cards">
+          
+            <div class="container">
+            <div class="member">
+              <div class="member-left">
+                <div class="member-image">
+                  
+                  <img src="../images/petros-voulgaris.png" alt="Photo of Dr. Voulgaris" />
+                </div>
+              <div class="member-contact">
+                <p>
+                  <a href="mailto:pvoulgaris@unr.edu">
+                    <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    pvoulgaris@unr.edu
+                  </a>
+                </p>
+                
+                  
+                  <div class="social-links">
+                    
+                    
+                    
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="member-info">
+                <h2>Dr. Voulgaris</h2>
+                <div class="title">Department Head</div>
+                <div class="year-range">
+                  
+                </div>
+                <p>Before joining UNR in 2020 and since 1991, Professor Petros G. Voulgaris has been a faculty with the Department of Aerospace Engineering, University of Illinois at Urbana-Champaign holding also appointments with the Coordinated Science Laboratory, and the department of Electrical and Computer Engineering. His research interests are in the general area of robust and optimal control and coordination of autonomous systems. Dr. Voulgaris is a recipient of several awards including the NSF Research Initiation Award, the ONR Young Investigator Award and the UIUC Xerox Award for research. He has also been a Visiting ADGAS Chair Professor, Mechanical Engineering, Petroleum Institute, Abu Dhabi, UAE and a Visiting Gaungbiao Chair at Zhejiang University, China. His research has been supported by several agencies including NSF, ONR, AFOSR, NASA. He is also a Fellow of IEEE.</p>
+              </div>
+            </div>
+          </div>
+          
+            <div class="container">
+            <div class="member">
+              <div class="member-left">
+                <div class="member-image">
+                  
+                  <img src="../images/jessica-peterson.jpg" alt="Photo of Jessica Peterson" />
+                </div>
+              <div class="member-contact">
+                <p>
+                  <a href="mailto:jessicapeterson@unr.edu">
+                    <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    jessicapeterson@unr.edu
+                  </a>
+                </p>
+                
+                  
+                  <div class="social-links">
+                    
+                    
+                    
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="member-info">
+                <h2>Jessica Peterson</h2>
+                <div class="title">PhD Student</div>
+                <div class="year-range">
+                  
+                    2023 - Present
+                  
+                </div>
+                <p>Ms. Jessica Peterson is a part-time Instructor Flight Test Engineer for the USAF Test Pilot School (USAF TPS) and a current PhD student and Research Assistant for the Mechanical Engineering Department at the University Nevada Reno. She has over 18 years of flight test experience on fighter, bomber, and autonomous vehicles. As a graduate and instructor of USAF TPS, she has directed hundreds of control room missions, instructed 150&#43; flight test and space test professionals at USAF TPS, and flown in over 40 different aircraft types with over 500 military flight hours in primarily the T-38, F-16, and C-12 aircraft.</p>
+              </div>
+            </div>
+          </div>
+          
+            <div class="container">
+            <div class="member">
+              <div class="member-left">
+                <div class="member-image">
+                  
+                  <img src="../images/caleb-patton.png" alt="Photo of Caleb Patton" />
+                </div>
+              <div class="member-contact">
+                <p>
+                  <a href="mailto:calebpatton@unr.edu">
+                    <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    calebpatton@unr.edu
+                  </a>
+                </p>
+                
+                  
+                  <div class="social-links">
+                    
+                    
+                    
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="member-info">
+                <h2>Caleb Patton</h2>
+                <div class="title">PhD Student</div>
+                <div class="year-range">
+                  
+                    2023 - Present
+                  
+                </div>
+                <p>Caleb is a phd student interested in AI, Autonomy and Aerospace</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <h1 class="section-heading">Past Members</h1>
+        <div id="student-cards">
+          
+            <div class="container">
+            <div class="member">
+              <div class="member-left">
+                <div class="member-image">
+                  
+                    
+                    <img src="../images/hyung-jin-yoon.jpg" alt="Photo of Dr. Hyung-Jin Yoon" />
+                  
+                </div>
+                <div class="member-contact">
+                  
+                    <p>
+                      <a href="mailto:hyoon@tntech.edu">
+                        <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        hyoon@tntech.edu
+                      </a>
+                    </p>
+                  
+                  
+                  <div class="social-links">
+                    
+                    
+                    
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="member-info">
+                <h2>Dr. Hyung-Jin Yoon </h2>
+                <div class="title">Post-Doc</div>
+                <div class="year-range">
+                  
+                    2020 - 2023
+                  
+                </div>
+                <p>Assistant Professor at Tennessee Technological University</p>
+              </div>
+            </div>
+          </div>
+          
+            <div class="container">
+            <div class="member">
+              <div class="member-left">
+                <div class="member-image">
+                  
+                    
+                    <img src="../images/antonio.png" alt="Photo of Antonio Fernandez Castano" />
+                  
+                </div>
+                <div class="member-contact">
+                  
+                    <p>
+                      <a href="mailto:afernandez@unr.edu">
+                        <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        afernandez@unr.edu
+                      </a>
+                    </p>
+                  
+                  
+                  <div class="social-links">
+                    
+                    
+                    
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="member-info">
+                <h2>Antonio Fernandez Castano </h2>
+                <div class="title">MS</div>
+                <div class="year-range">
+                  
+                    2022 - 2024
+                  
+                </div>
+                <p>Associate Manufacturing Equipment Engineer at Tesla</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+</main>
+
 
   </main>
   <footer>

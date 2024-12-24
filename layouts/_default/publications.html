@@ -58,7 +58,9 @@
       {{ $currentYear = .year }}
     {{ end }}
     <li>
-      <a href="{{ .link }}">{{ .title }}</a>
+      <div>
+        <a href="{{ .link }}">{{ .title }}, {{.publisher}}</a>
+      </div>
     </li>
   {{ end }}
   {{ if ne $currentYear 0 }}</ul>{{ end }}

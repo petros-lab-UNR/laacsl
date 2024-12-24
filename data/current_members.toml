@@ -3,20 +3,31 @@ name = "Dr. Voulgaris"
 mugshot = "petros-voulgaris.png"
 text = "Before joining UNR in 2020 and since 1991, Professor Petros G. Voulgaris has been a faculty with the Department of Aerospace Engineering, University of Illinois at Urbana-Champaign holding also appointments with the Coordinated Science Laboratory, and the department of Electrical and Computer Engineering. His research interests are in the general area of robust and optimal control and coordination of autonomous systems. Dr. Voulgaris is a recipient of several awards including the NSF Research Initiation Award, the ONR Young Investigator Award and the UIUC Xerox Award for research. He has also been a Visiting ADGAS Chair Professor, Mechanical Engineering, Petroleum Institute, Abu Dhabi, UAE and a Visiting Gaungbiao Chair at Zhejiang University, China. His research has been supported by several agencies including NSF, ONR, AFOSR, NASA. He is also a Fellow of IEEE."
 email = "pvoulgaris@unr.edu"
-[[members]]
-name = "Caleb Patton"
-mugshot = "caleb-patton.png"
-text = "Caleb is a phd student interested in AI, Autonomy and Aerospace"
-email = "calebpatton@unr.edu"
-[[members]]
-name = "Antonio Fernandez Castano"
-mugshot = "antonio.png"
-text = "Antonio currently works as a Graduate Research Assistant in the Learning Autonomy and Control Systems Lab at the University of Nevada, Reno. He received his B.S. in Mechanical Engineering with a minor in Mathematics in 2022 from West Virginia University Institute of Technology. He was awarded the Presidential Leadership Award, Pi Tau Sigma Chapter Contribution, and National Fluid Power Association awards during his time there. During his pursuit of an MS at UNR, he actively contributed to two research papers: \"Adaptive Control to Suppress Torque Ripple in Electric Vehicles\" and \"Uncertainty Quantification-Based Switching Control Method for Vision-Based Object Tracking in Unmanned Aerial Vehicles.\" Both papers were presented at MECC 2023 and AIAA SciTech 2024 respectively. His research interests include uncertainty mitigation in autonomous vehicles, manufacturing control and robotics, and machine learning. After the completion of his MS, he will be joining Tesla, Inc."
-email = "afernandez@unr.edu"
+title = "Department Head"
+
 [[members]]
 name = "Jessica Peterson"
 mugshot = "jessica-peterson.jpg"
 text = "Ms. Jessica Peterson is a part-time Instructor Flight Test Engineer for the USAF Test Pilot School (USAF TPS) and a current PhD student and Research Assistant for the Mechanical Engineering Department at the University Nevada Reno. She has over 18 years of flight test experience on fighter, bomber, and autonomous vehicles. As a graduate and instructor of USAF TPS, she has directed hundreds of control room missions, instructed 150+ flight test and space test professionals at USAF TPS, and flown in over 40 different aircraft types with over 500 military flight hours in primarily the T-38, F-16, and C-12 aircraft."
 email = "jessicapeterson@unr.edu"
+title = "PhD Student"
+start_year = 2023
+
+
+[[members]]
+name = "Caleb Patton"
+mugshot = "caleb-patton.png"
+text = "Caleb is a phd student interested in AI, Autonomy and Aerospace"
+email = "calebpatton@unr.edu"
+title = "PhD Student"
+start_year = 2023
+
+
+
+
+
+
+
+
 
 

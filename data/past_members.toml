@@ -1,0 +1,26 @@
+
+[[members]]
+name = "Dr. Hyung-Jin Yoon"
+mugshot = "hyung-jin-yoon.jpg"
+text = ""
+email = "hyoon@tntech.edu"
+title = "Post-Doc"
+new_position = "Assistant Professor at Tennessee Technological University"
+start_year = 2020
+end_year = 2023
+
+
+
+[[members]]
+name = "Antonio Fernandez Castano"
+mugshot = "antonio.png"
+text = "Antonio currently works as a Graduate Research Assistant in the Learning Autonomy and Control Systems Lab at the University of Nevada, Reno. He received his B.S. in Mechanical Engineering with a minor in Mathematics in 2022 from West Virginia University Institute of Technology. He was awarded the Presidential Leadership Award, Pi Tau Sigma Chapter Contribution, and National Fluid Power Association awards during his time there. During his pursuit of an MS at UNR, he actively contributed to two research papers: \"Adaptive Control to Suppress Torque Ripple in Electric Vehicles\" and \"Uncertainty Quantification-Based Switching Control Method for Vision-Based Object Tracking in Unmanned Aerial Vehicles.\" Both papers were presented at MECC 2023 and AIAA SciTech 2024 respectively. His research interests include uncertainty mitigation in autonomous vehicles, manufacturing control and robotics, and machine learning. After the completion of his MS, he will be joining Tesla, Inc."
+email = "afernandez@unr.edu"
+title = "MS"
+new_position = "Associate Manufacturing Equipment Engineer at Tesla"
+start_year = 2022
+end_year = 2024
+
+
+
+
