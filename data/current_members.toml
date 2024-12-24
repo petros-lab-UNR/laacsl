@@ -17,7 +17,7 @@ start_year = 2023
 [[members]]
 name = "Caleb Patton"
 mugshot = "caleb-patton.png"
-text = "Caleb is a phd student interested in AI, Autonomy and Aerospace"
+text = "Caleb is a second year PhD student at the University of Nevada, Reno, advised by Dr. Petros Voulgaris. Caleb earned his undergraduate degree in Computer Engineering from the University of Illinois where he developed interests in Robotics and Deep Learning in addition to learning electronics and software skills. Caleb’s broad range of interests inspired him to join the Learning Autonomy and Controls Systems Laboratory in the Mechanical Engineering Department at UNR during the Spring of 2023, where he immediately developed a strong interest in Guidance, Navigation and Control for Autonomous Vehicles. During the Summer of 2024, Caleb interned for Sandia National Laboratories at the AutonomyNM institute, where he developed algorithms for advanced flight and space systems."
 email = "calebpatton@unr.edu"
 title = "PhD Student"
 start_year = 2023
