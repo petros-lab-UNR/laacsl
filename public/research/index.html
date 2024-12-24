@@ -95,117 +95,156 @@
   }
 
   .container {
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
   }
 
-  .container img {
-    width: 100%;
-    height: auto;
-    display: block;    
-}
-
-  h1 {
+  h1, h2 {
     text-align: center;
     color: #333;
   }
 
-  .links {
-    list-style-type: none;
-    padding: 0;
+  .section-heading {
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 
-  .links li {
-    margin-bottom: 10px;
-  }
-
-  .links li a {
-    display: block;
-    padding: 10px;
+  .content-box {
     background-color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #333;
-    border: 1px solid #ccc;
-    transition: background-color 0.3s ease;
-  }
-
-  .links li a:hover {
-    background-color: #f0f0f0;
-
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
   }
 
   .column-container {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .column {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  .project {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+
+  .project h4 {
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+
+  .project img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .project p {
+    padding: 0 20px 20px;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .main-topic {
+  color: #333333;  
+  text-decoration: none;  
+  border-bottom: 1px dotted #666666;  
+  transition: all 0.3s ease;  
+  font-weight: 500;  
 }
 
-.column {
-  width: 45%;
+.main-topic:hover {
+  color: #000000;  
+  border-bottom: 1px solid #000000;  
 }
+
+
 
 </style>
-</head>
-<body>
 
-<div class="container">
-  <div class="column-container">
-    <div class="column">
-  <h1>Core Research Expertise</h1>
-  <ul>
-    <li>Stochastic Control Methods for Path Planning</li>
-    <ul>
-      <li>RL : Discretization of belief space for partially observable Markov decision process.​</li>
-      <li>MPPI : Monte-Carlo simulation-based Path integral method for approximate solution of finite time horizon optimal control in MPC.​</li>
-      <li>Complexity : Sampling complexity for the simulation-based optimization for the stochastic control tasks.​</li>  
-    </ul>
-    <li>Adversarial Machine Learning for Autonomous Vehicles​
-      <ul>
-        <li>Min-max optimization framework to robustify perception-based control that utilizes high-dimensional sensors, e.g., camera, lidar, and radar.​</li>
-      </ul>
-    </li>
-    <li>Distributed and Robust Control
-      <ul>
-        <li>Input-output methods for analysis, design and implementation of distributed architectures​</li>
-        <li>Mean Field control​</li>
-        <li>Security in feedback control systems</li>
-      </ul>
-    </li>
-    <li>Decentralized Optimization</li>
-    <ul>
-      <li>Efficient incorporation of second-order information in multi-agent networks​</li>
-      <li>A General and flexible framework (gradient, quasi-Newton, Newton) for decentralized optimization.​</li>
-      <li>Asynchronous and hybrid extension</li>
-    </ul>
-  </ul>
+<main id="content">
+  <div class="container">
+    <h1 class="section-heading">Research Areas</h1>
+    <div class="content-box">
+      <div class="column-container">
+        <div class="column">
+          <h2>Core Research Expertise</h2>
+          <ul>
+            <li><a href="#stochastic-control" class="main-topic">Stochastic Control Methods for Path Planning</a>
+              <ul>
+                <li>RL : Discretization of belief space for partially observable Markov decision process.</li>
+                <li>MPPI : Monte-Carlo simulation-based Path integral method for approximate solution of finite time horizon optimal control in MPC.</li>
+                <li>Complexity : Sampling complexity for the simulation-based optimization for the stochastic control tasks.</li>  
+              </ul>
+            </li>
+            <li><a href="#adversarial-ml" class="main-topic">Adversarial Machine Learning for Autonomous Vehicles</a>
+              <ul>
+                <li>Min-max optimization framework to robustify perception-based control that utilizes high-dimensional sensors, e.g., camera, lidar, and radar.</li>
+              </ul>
+            </li>
+            <li><a href="#distributed-control" class="main-topic">Distributed and Robust Control</a>
+              <ul>
+                <li>Input-output methods for analysis, design and implementation of distributed architectures</li>
+                <li>Mean Field control</li>
+                <li>Security in feedback control systems</li>
+              </ul>
+            </li>
+            <li><a href="#decentralized-optimization" class="main-topic">Decentralized Optimization</a>
+              <ul>
+                <li>Efficient incorporation of second-order information in multi-agent networks</li>
+                <li>A General and flexible framework (gradient, quasi-Newton, Newton) for decentralized optimization.</li>
+              </ul>
+            </li>
+          </ul>
+          
+        </div>
+        <div class="column">
+          <h2>Relevant Topics and Applications</h2>
+          <ul>
+            <li>Exploration in uncertain environment: Discretization of the belief space is useful to consider the trade-off between exploration and exploitation.</li>
+            <li>Sampling based path integral method to consider complex cost function for optimal control of autonomous vehicles in cluttered and dynamic environment.</li>
+            <li>On board computer resource allocation for the path integral method based on sampling complexity bounds.</li>
+            <li>Validation of machine learning tool embedded in autonomous vehicle software stack.</li>
+            <li>Real-time optimization-based control: Information exchange based on proximities; Connected Autonomous vehicles, Drone fleets, Field robot coordination etc.</li>
+            <li>Decentralized Machine learning: Distributed data mandates distributed computing (privacy/security); Heterogeneous hardware require flexible computing schemes.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <h1 class="section-heading">Current Projects</h1>
+    <div class="project">
+      <h4>Robust and Resilient Autonomy for Advanced Air Mobility NASA University Leadership Initiative Project</h4>
+      <img src="../images/Framework.png" alt="Project Framework">
+      <p>The LAACSL is a member of the NASA Robust and Resilient Autonomy Project along with research groups from the University of Illinois, MIT, Georgia Tech, 
+         North Carolina A&T State University and Corporate Partners Lockheed Martin and the Sierra Nevada Corporation</p>
+      <p>This project aims to develop, integrate and test methods aimed at improving safety of Urban Air Mobility technologies that are expected to become more prominent in the coming years.</p>
+    </div>
   </div>
-  <div class="column">
-  <h1>Relevant Topics and Applications</h1>
-  <ul>
-    <li>Exploration in uncertain environment: Discretization of the belief space is useful to consider the trade-off between exploration and exploitation.​</li>
-    <li>Sampling based path integral method to consider complex cost function for optimal control of autonomous vehicles in cluttered and dynamic environment. </li>
-    <li>On board computer resource allocation for the path integral method based on sampling complexity bounds. </li>
-    <li>Validation of machine learning tool embedded in autonomous vehicle software stack.</li>
-    <li>Real-time optimization-based control: Information exchange based on proximities; Connected Autonomous vehicles, Drone fleets, Field robot coordination etc.</li>
-    <li>Decentralized Machine learning: Distributed data mandates distributed computing (privacy/security); Heterogeneous hardware require flexible computing schemes.</li>
-  </ul>
-</div>
-</div>
-  
-  <h2>Current Projects</h2>
-  <ul class="links">
-    <li>
-        <h4>Robust and Resilient Autonomy for Advanced Air Mobility NASA University Leadership Initiative Project</h4>
-            <img src="../images/Framework.png">
-        <p>The LAACSL is a member of the NASA Robust and Resilient Autonomy Project along with research groups from the University of Illinois, MIT, Georgia Tech, 
-            North Carolina A&T State University and Corporate Partners Lockheed Martin and the Sierra Nevada Corporation</p>
-        <p> This project aims to develop, integrate and test methods aimed at improving safety of Urban Air Mobility technologies that are expected to become more prominent in the coming years.</p>
-    </li>
-  </ul>
-</div>
-
-</body>
-</html>
+</main>
 
 
   </main>

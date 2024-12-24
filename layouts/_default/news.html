@@ -8,64 +8,83 @@
   }
 
   .container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
   }
 
-  h1 {
-    text-align: center;
+  h1, h2 {
     color: #333;
   }
 
-  .links {
+  .section-heading {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .content-box {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  .year-heading {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+  }
+
+  .news-list {
     list-style-type: none;
     padding: 0;
   }
 
-  .links li {
-    margin-bottom: 10px;
+  .news-item {
+    margin-bottom: 15px;
   }
 
-  .links li a {
+  .news-link {
     display: block;
     padding: 10px;
-    background-color: #fff;
+    background-color: #f8f8f8;
     border-radius: 5px;
     text-decoration: none;
     color: #333;
-    border: 1px solid #ccc;
     transition: background-color 0.3s ease;
   }
 
-  .links li a:hover {
-    background-color: #f0f0f0;
+  .news-link:hover {
+    background-color: #e0e0e0;
   }
 </style>
-</head>
-<body>
 
-<div class="container">
-  {{ $news := .Site.Data.news.news }}
-  {{ $sortedNews := sort $news "year" "desc" }}
-  
-  {{ $currentYear := 0 }}
-  {{ range $sortedNews }}
-    {{ if ne .year $currentYear }}
+<main id="content">
+  <div class="container">
+    <h1 class="section-heading">News</h1>
+    
+    <div class="content-box">
+      {{ $news := .Site.Data.news.news }}
+      {{ $sortedNews := sort $news "year" "desc" }}
+      
+      {{ $currentYear := 0 }}
+      {{ range $sortedNews }}
+        {{ if ne .year $currentYear }}
+          {{ if ne $currentYear 0 }}</ul>{{ end }}
+          <h2 class="year-heading">{{ .year }}</h2>
+          <ul class="news-list">
+          {{ $currentYear = .year }}
+        {{ end }}
+        <li class="news-item">
+          <a href="{{ .link }}" class="news-link">{{ .title }}</a>
+        </li>
+      {{ end }}
       {{ if ne $currentYear 0 }}</ul>{{ end }}
-      <h2>{{ .year }}</h2>
-      <ul class="links">
-      {{ $currentYear = .year }}
-    {{ end }}
-    <li>
-      <a href="{{ .link }}">{{ .title }}</a>
-    </li>
-  {{ end }}
-  {{ if ne $currentYear 0 }}</ul>{{ end }}
-  
-</div>
-
-</body>
-</html>
-
+    </div>
+  </div>
+</main>
 {{ end }}

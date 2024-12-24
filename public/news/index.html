@@ -95,91 +95,90 @@
   }
 
   .container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
   }
 
-  h1 {
-    text-align: center;
+  h1, h2 {
     color: #333;
   }
 
-  .links {
+  .section-heading {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .content-box {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  .year-heading {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+  }
+
+  .news-list {
     list-style-type: none;
     padding: 0;
   }
 
-  .links li {
-    margin-bottom: 10px;
+  .news-item {
+    margin-bottom: 15px;
   }
 
-  .links li a {
+  .news-link {
     display: block;
     padding: 10px;
-    background-color: #fff;
+    background-color: #f8f8f8;
     border-radius: 5px;
     text-decoration: none;
     color: #333;
-    border: 1px solid #ccc;
     transition: background-color 0.3s ease;
   }
 
-  .links li a:hover {
-    background-color: #f0f0f0;
+  .news-link:hover {
+    background-color: #e0e0e0;
   }
 </style>
-</head>
-<body>
 
-<div class="container">
-  
-  
-  
-  
-  
+<main id="content">
+  <div class="container">
+    <h1 class="section-heading">News</h1>
     
+    <div class="content-box">
       
-      <h2>2024</h2>
-      <ul class="links">
       
-    
-    <li>
-      <a href="no%20link">test1</a>
-    </li>
-  
-    
+      
+      
+      
+        
+          
+          <h2 class="year-heading">2023</h2>
+          <ul class="news-list">
+          
+        
+        <li class="news-item">
+          <a href="https://www.unr.edu/nevada-today/news/2023/aerospace-engineering-program" class="news-link">University receives largest individual gift in its history to create the George W. Gillemot Aerospace Engineering Department</a>
+        </li>
+      
+        
+        <li class="news-item">
+          <a href="https://www.unr.edu/nevada-today/news/2022/nasa-uli-research-" class="news-link">NASA ULI Project Grant Awarded</a>
+        </li>
+      
       </ul>
-      <h2>2023</h2>
-      <ul class="links">
-      
-    
-    <li>
-      <a href="https://www.unr.edu/nevada-today/news/2023/aerospace-engineering-program">University receives largest individual gift in its history to create the George W. GIllemot Aerospace Engineering Department</a>
-    </li>
-  
-    
-    <li>
-      <a href="https://www.unr.edu/nevada-today/news/2022/nasa-uli-research-">NASA ULI Project Grant Awarded</a>
-    </li>
-  
-    
-      </ul>
-      <h2>2022</h2>
-      <ul class="links">
-      
-    
-    <li>
-      <a href="no%20link">test1</a>
-    </li>
-  
-  </ul>
-  
-</div>
-
-</body>
-</html>
-
+    </div>
+  </div>
+</main>
 
   </main>
   <footer>
