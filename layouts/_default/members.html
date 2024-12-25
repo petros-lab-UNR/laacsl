@@ -135,7 +135,7 @@
     margin-bottom: 10px;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .member {
       flex-direction: column;
     }
@@ -147,15 +147,19 @@
     .member-image {
       width: 100%;
       height: auto;
+      max-width: 300px;
+      margin: 0 auto;
     }
     
     .member-contact {
       order: 3;
+      text-align: center;
     }
     
     .member-info {
       order: 2;
       padding: 15px;
+      text-align: center;
     }
   }
 </style>
@@ -172,6 +176,41 @@
               {{ $imagePath := printf "/images/%s" .mugshot }}
               <img src="{{ $imagePath | safeURL }}" alt="Photo of {{ .name }}" />
             </div>
+            <div class="member-contact">
+              <p>
+                <a href="mailto:{{ .email }}">
+                  <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                  {{ .email }}
+                </a>
+              </p>
+              {{ if .phone }}
+                <p>{{ .phone }}</p>
+              {{ end }}
+              <div class="social-links">
+                {{ if .linkedin }}
+                  <a href="{{ .linkedin }}" target="_blank" title="LinkedIn">
+                    <img src="/images/linkedin-logo.png" alt="LinkedIn">
+                  </a>
+                {{ end }}
+                {{ if .github }}
+                  <a href="{{ .github }}" target="_blank" title="GitHub">
+                    <img src="/images/github-logo.png" alt="GitHub">
+                  </a>
+                {{ end }}
+                {{ if .twitter }}
+                  <a href="{{ .twitter }}" target="_blank" title="Twitter">
+                    <img src="/images/twitter-logo.png" alt="Twitter">
+                  </a>
+                {{ end }}
+                {{ if .website }}
+                  <a href="{{ .website }}" target="_blank" title="Personal Website">
+                    <img src="/images/website-logo.png" alt="Website">
+                  </a>
+                {{ end }}
+              </div>
+            </div>
           </div>
           <div class="member-info">
             <h2>{{.name}}</h2>
@@ -182,41 +221,6 @@
               {{ end }}
             </div>
             <p>{{.text}}</p>
-          </div>
-          <div class="member-contact">
-            <p>
-              <a href="mailto:{{ .email }}">
-                <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                </svg>
-                {{ .email }}
-              </a>
-            </p>
-            {{ if .phone }}
-              <p>{{ .phone }}</p>
-            {{ end }}
-            <div class="social-links">
-              {{ if .linkedin }}
-                <a href="{{ .linkedin }}" target="_blank" title="LinkedIn">
-                  <img src="/images/linkedin-logo.png" alt="LinkedIn">
-                </a>
-              {{ end }}
-              {{ if .github }}
-                <a href="{{ .github }}" target="_blank" title="GitHub">
-                  <img src="/images/github-logo.png" alt="GitHub">
-                </a>
-              {{ end }}
-              {{ if .twitter }}
-                <a href="{{ .twitter }}" target="_blank" title="Twitter">
-                  <img src="/images/twitter-logo.png" alt="Twitter">
-                </a>
-              {{ end }}
-              {{ if .website }}
-                <a href="{{ .website }}" target="_blank" title="Personal Website">
-                  <img src="/images/website-logo.png" alt="Website">
-                </a>
-              {{ end }}
-            </div>
           </div>
         </div>
       </div>
@@ -237,6 +241,43 @@
                 <img src="/images/default-avatar.png" alt="Default avatar" />
               {{ end }}
             </div>
+            <div class="member-contact">
+              {{ if .email }}
+                <p>
+                  <a href="mailto:{{ .email }}">
+                    <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    {{ .email }}
+                  </a>
+                </p>
+              {{ end }}
+              {{ if .phone }}
+                <p>{{ .phone }}</p>
+              {{ end }}
+              <div class="social-links">
+                {{ if .linkedin }}
+                  <a href="{{ .linkedin }}" target="_blank" title="LinkedIn">
+                    <img src="/images/linkedin-logo.png" alt="LinkedIn">
+                  </a>
+                {{ end }}
+                {{ if .github }}
+                  <a href="{{ .github }}" target="_blank" title="GitHub">
+                    <img src="/images/github-logo.png" alt="GitHub">
+                  </a>
+                {{ end }}
+                {{ if .twitter }}
+                  <a href="{{ .twitter }}" target="_blank" title="Twitter">
+                    <img src="/images/twitter-logo.png" alt="Twitter">
+                  </a>
+                {{ end }}
+                {{ if .website }}
+                  <a href="{{ .website }}" target="_blank" title="Personal Website">
+                    <img src="/images/website-logo.png" alt="Website">
+                  </a>
+                {{ end }}
+              </div>
+            </div>
           </div>
           <div class="member-info">
             <h2>{{.name}} {{.degree}}</h2>
@@ -247,43 +288,6 @@
               {{ end }}
             </div>
             <p>{{.new_position}}</p>
-          </div>
-          <div class="member-contact">
-            {{ if .email }}
-              <p>
-                <a href="mailto:{{ .email }}">
-                  <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                  </svg>
-                  {{ .email }}
-                </a>
-              </p>
-            {{ end }}
-            {{ if .phone }}
-              <p>{{ .phone }}</p>
-            {{ end }}
-            <div class="social-links">
-              {{ if .linkedin }}
-                <a href="{{ .linkedin }}" target="_blank" title="LinkedIn">
-                  <img src="/images/linkedin-logo.png" alt="LinkedIn">
-                </a>
-              {{ end }}
-              {{ if .github }}
-                <a href="{{ .github }}" target="_blank" title="GitHub">
-                  <img src="/images/github-logo.png" alt="GitHub">
-                </a>
-              {{ end }}
-              {{ if .twitter }}
-                <a href="{{ .twitter }}" target="_blank" title="Twitter">
-                  <img src="/images/twitter-logo.png" alt="Twitter">
-                </a>
-              {{ end }}
-              {{ if .website }}
-                <a href="{{ .website }}" target="_blank" title="Personal Website">
-                  <img src="/images/website-logo.png" alt="Website">
-                </a>
-              {{ end }}
-            </div>
           </div>
         </div>
       </div>
