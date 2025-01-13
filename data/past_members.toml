@@ -21,6 +21,13 @@ new_position = "Associate Manufacturing Equipment Engineer at Tesla"
 start_year = 2022
 end_year = 2024
 
-
+[[members]]
+name = "Yichuan Li"
+mugshot = "yichuan-li.jpg"
+text = ""
+title = "Post-Doc"
+new_position = "Senior Research Engineer at Alibaba Group"
+start_year = 2022
+end_year = 2023
 
 
