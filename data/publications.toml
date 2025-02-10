@@ -16,3 +16,74 @@ link = "https://arxiv.org/pdf/2212.13667.pdf"
 year = 2023
 publisher = "IEEE Robotics and Automation Letters"
 
+[[publications]]
+title = "Real-time Adversarial Image Perturbations for Autonomous Vehicles using Reinforcement Learning"
+link = "https://dl.acm.org/doi/pdf/10.1145/3712303"
+year = 2025
+publisher = "ACM Transactions on Cyber-Physical Systems"
+
+[[publications]]
+title = "Verification and Validation of a Vision-Based Landing System for Autonomous VTOL Air Taxis"
+link = "https://arxiv.org/pdf/2412.08102"
+year = 2025
+publisher = "AIAA SCITECH"
+
+[[publications]]
+title = "Bayesian Data Augmentation and Training for Perception DNN in Autonomous Aerial Vehicles"
+link = "https://arxiv.org/pdf/2412.07655"
+year = 2025
+publisher = "AIAA SciTech"
+
+[[publications]]
+title = "A Youla Operator State-Space Framework for Stably Implementable Distributed Control"
+link = "https://ieeexplore.ieee.org/abstract/document/10504970"
+year = 2024
+publisher = "IEEE Transactions on Automatic Control"
+
+[[publications]]
+title = "Backup Plan Constrained Model Predictive Control with Guaranteed Stability"
+link = "https://arxiv.org/pdf/2306.06102"
+year = 2024
+publisher = "Journal of Guidance, Control, and Dynamics"
+
+[[publications]]
+title = "Robust vehicle lane keeping control with networked proactive adaptation"
+link = "https://arxiv.org/pdf/2009.12349"
+year = 2023
+publisher = "Artificial Intelligence"
+
+[[publications]]
+title = "Resilient Estimation and Safe Planning for UAVs in GPS-Denied Environments"
+link = "https://link.springer.com/chapter/10.1007/978-3-031-39767-7_7"
+year = 2023
+publisher = "Control of Autonomous Aerial Vehicles: Advances in Autopilot Design for Civilian UAVs"
+
+[[publications]]
+title = "Adaptive Risk Sensitive Path Integral for Model Predictive Control via Reinforcement Learning"
+link = "https://ieeexplore.ieee.org/abstract/document/10185876"
+year = 2023
+publisher = "Mediterranean Conference on Control and Automation"
+
+[[publications]]
+title = "An Information-Theoretic Analysis of Discrete-Time Control and Filtering Limitations by the I-MMSE Relationships"
+link = "https://arxiv.org/pdf/2304.09274"
+year = 2023
+publisher = ""
+
+[[publications]]
+title = "Sℒ1-Simplex: Safe Velocity Regulation of Self-Driving Vehicles in Dynamic and Unforeseen Environments"
+link = "https://dl.acm.org/doi/full/10.1145/3564273"
+year = 2023
+publisher = "ACM Transactions on Cyber-Physical Systems"
+
+[[publications]]
+title = "Communication efficient curvature aided primal-dual algorithms for decentralized optimization"
+link = "https://arxiv.org/pdf/2204.06380"
+year = 2023
+publisher = "IEEE Transactions on Automatic Control"
+
+[[publications]]
+title = "Adaptive Control to Suppress Torque Ripple in Electric Vehicles"
+link = "https://www.sciencedirect.com/science/article/pii/S2405896323023613"
+year = 2023
+publisher = "IFAC-PapersOnLine"
